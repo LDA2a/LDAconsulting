@@ -1,0 +1,6 @@
+# Config locale Claude Code
+.claude/
+
+# Système
+Thumbs.db
+.DS_Store
