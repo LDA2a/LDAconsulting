@@ -7,7 +7,7 @@ professions libérales.
 ## 🔗 Site en ligne
 
 > Une fois GitHub Pages activé, le site sera accessible ici :
-> **https://VOTRE-PSEUDO.github.io/lda-consulting/**
+> **https://lda2a.github.io/LDAconsulting/**
 
 ## 🧱 Stack
 
