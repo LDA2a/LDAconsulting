@@ -1,0 +1,30 @@
+{
+  "_aide": "MODELE de la formule storytelling VALIDEE. Pour une nouvelle video : copie ce dossier _modele, renomme-le (ex: projets/mon-sujet), remplis 'segments', puis lance 'python -m pipeline projets/mon-sujet'. Formule validee = voix Gemini dynamique + vrais extraits YouTube + cadrage 'entier' + pas de sous-titres + jamais le meme plan + musique cinematique. Ecriture : hook puissant, cause->consequence, chute marquante (voir methode What a Fail en memoire).",
+  "titre": "Mon sujet (de preference une histoire vraie)",
+  "langue": "fr",
+  "ambiance": "documentaire",
+  "cadrage": "entier",
+  "segments": [
+    {
+      "_aide": "HOOK : un fait, un paradoxe ou une question choc. Jamais d'intro molle. 'source/debut/fin' = extrait YouTube reel utilise comme visuel (recadre). 'recherche' = mots-cles EN de secours (stock) si pas d'extrait.",
+      "texte": "Phrase d'accroche percutante, dynamique.",
+      "source": "https://youtu.be/IDENTIFIANT",
+      "debut": "00:10",
+      "fin": "00:30",
+      "recherche": "english fallback keywords"
+    },
+    {
+      "_aide": "DEVELOPPEMENT : suite cause -> consequence. Ici sans extrait : visuel stock via 'recherche'.",
+      "texte": "Developpement clair et rythme, une idee qui amene la suivante.",
+      "recherche": "precise english keywords"
+    },
+    {
+      "_aide": "Pour qu'un EXTRAIT PARLE DE LUI-MEME (garder sa voix originale, sous-titres traduits si anglais) : ajouter \"extrait_audio\": true et \"langue\": \"en\". Sinon la voix off Gemini passe par-dessus.",
+      "texte": "Chute marquante, a portee universelle.",
+      "source": "https://youtu.be/IDENTIFIANT",
+      "debut": "01:05",
+      "fin": "01:25",
+      "recherche": "english fallback keywords"
+    }
+  ]
+}

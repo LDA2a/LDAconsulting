@@ -4,3 +4,28 @@
 # Système
 Thumbs.db
 .DS_Store
+
+# Secrets / clés API — NE JAMAIS COMMITER
+.env
+*.env
+
+# Pipeline vidéo TikTok
+.venv/
+venv/
+__pycache__/
+# Dossiers générés / téléchargés par le pipeline (on ne versionne PAS les médias)
+projets/*/assets/
+projets/*/assets_youtube/
+projets/*/output/
+projets/*/audio/
+projets/*/work/
+projets/*/work_youtube/
+projets/*/sources/
+# Médias et images générées dans les projets (on garde segments.json & scripts .py)
+*.mp4
+*.wav
+*.mp3
+*.pcm
+projets/**/*.jpg
+projets/**/*.jpeg
+projets/**/*.png

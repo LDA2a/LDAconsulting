@@ -1,0 +1,43 @@
+{
+  "titre": "Le point bleu pale",
+  "langue": "fr",
+  "ambiance": "documentaire",
+  "cadrage": "entier",
+  "segments": [
+    {
+      "texte": "Six milliards de kilometres. C'est la distance qu'avait franchie la sonde Voyager 1 quand la NASA lui a donne un ordre completement fou. Fais demi-tour, et prends une derniere photo de la Terre.",
+      "source": "https://youtu.be/GO5FwsblpT8",
+      "debut": "00:16",
+      "fin": "00:36",
+      "recherche": "planet earth from space"
+    },
+    {
+      "texte": "Carl Sagan s'etait battu pendant des annees pour obtenir ce cliche. Les ingenieurs avaient peur, viser le Soleil pouvait griller la camera. Mais lui voulait une seule image. Celle qui allait tout changer.",
+      "source": "https://youtu.be/GO5FwsblpT8",
+      "debut": "00:38",
+      "fin": "00:58",
+      "recherche": "earth shrinking distance space"
+    },
+    {
+      "texte": "Le 14 fevrier 1990, la sonde se retourne. Et la, dans l'immensite noire, la Terre n'est plus rien. Un point. Un minuscule pixel bleu, perdu au milieu d'un rayon de lumiere.",
+      "source": "https://youtu.be/GO5FwsblpT8",
+      "debut": "01:00",
+      "fin": "01:22",
+      "recherche": "tiny earth dot starfield"
+    },
+    {
+      "texte": "Regarde bien ce point. C'est ici. C'est nous. Tout le monde. Chaque roi, chaque guerre, chaque amour, chaque enfant, tient sur ce grain de poussiere suspendu dans un rayon de soleil.",
+      "source": "https://youtu.be/GO5FwsblpT8",
+      "debut": "02:20",
+      "fin": "02:42",
+      "recherche": "pale blue dot sunbeam"
+    },
+    {
+      "texte": "Sur ce decor immense, rien n'indique qu'on viendra nous sauver de nous-memes. Alors protege ce point bleu pale. C'est la seule maison qu'on ait jamais connue.",
+      "source": "https://youtu.be/GO5FwsblpT8",
+      "debut": "02:55",
+      "fin": "03:17",
+      "recherche": "cosmos nebula deep space"
+    }
+  ]
+}
