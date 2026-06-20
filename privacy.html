@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de confidentialité — LDA video</title>
+<style>
+  :root { --bleu:#1466b8; --gris:#5b6470; --fond:#f7f9fc; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+         color:#1b2330; background:var(--fond); line-height:1.65; }
+  header { background:#0d111c; color:#fff; padding:28px 20px; }
+  .wrap { max-width:820px; margin:0 auto; padding:0 20px; }
+  header .wrap { padding:0; }
+  h1 { margin:0; font-size:1.7rem; }
+  main { padding:40px 0 80px; }
+  h2 { color:var(--bleu); margin-top:2em; font-size:1.2rem; }
+  .maj { color:var(--gris); font-size:.9rem; }
+  a { color:var(--bleu); }
+  footer { color:var(--gris); font-size:.85rem; border-top:1px solid #e2e8f0;
+           padding:24px 0; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><h1>LDA video — Politique de confidentialité</h1></div></header>
+<main class="wrap">
+  <p class="maj">Dernière mise à jour : 20 juin 2026</p>
+
+  <p>« LDA video » est un outil d'automatisation édité par <strong>LDA Consulting</strong>
+  (Leandro De Almeida) qui génère des vidéos de storytelling et les publie sur le
+  compte TikTok de son propriétaire. La présente politique explique quelles données
+  l'application traite et pourquoi.</p>
+
+  <h2>Données que nous traitons</h2>
+  <ul>
+    <li><strong>Informations de compte de base</strong> (scope <code>user.info.basic</code>) :
+      identifiant ouvert (open_id), nom d'affichage et avatar, afin d'identifier le
+      compte autorisé avant publication.</li>
+    <li><strong>Jetons d'accès TikTok</strong> (OAuth) : nécessaires pour publier en votre nom.</li>
+    <li><strong>Contenus vidéo</strong> que vous générez et choisissez de publier
+      (scopes <code>video.publish</code>, <code>video.upload</code>).</li>
+  </ul>
+
+  <h2>Finalité</h2>
+  <p>Ces données servent uniquement à téléverser et publier vos propres vidéos sur
+  <strong>votre propre compte TikTok</strong>, via la Content Posting API. L'application
+  ne publie sur aucun compte tiers et n'accède à aucune donnée d'autres utilisateurs.</p>
+
+  <h2>Conservation et stockage</h2>
+  <p>L'application s'exécute localement sur l'ordinateur du propriétaire. Les jetons
+  d'accès sont stockés localement sur cette machine et ne sont transmis qu'aux
+  serveurs officiels de TikTok pour réaliser la publication. Aucune donnée n'est
+  revendue, partagée ou transmise à un tiers.</p>
+
+  <h2>Partage avec des tiers</h2>
+  <p>Aucun. Les seules communications sortantes se font avec les API officielles de
+  TikTok (et de YouTube/Google pour la partie YouTube de l'outil).</p>
+
+  <h2>Vos droits</h2>
+  <p>Vous pouvez révoquer l'accès à tout moment depuis les réglages de votre compte
+  TikTok (Applications connectées) ; les jetons locaux deviennent alors inutilisables.
+  Vous pouvez aussi supprimer les jetons stockés localement.</p>
+
+  <h2>Contact</h2>
+  <p>Pour toute question : <a href="mailto:leandro.dealmeida.consulting@gmail.com">
+  leandro.dealmeida.consulting@gmail.com</a></p>
+
+  <footer>© 2026 LDA Consulting — <a href="index.html">Accueil</a> ·
+  <a href="terms.html">Conditions d'utilisation</a></footer>
+</main>
+</body>
+</html>
