@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Autorisation — LDA video</title>
+<style>
+  body { margin:0; min-height:100vh; display:flex; align-items:center;
+         justify-content:center; font-family:-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+         background:#0d111c; color:#fff; text-align:center; padding:24px; }
+  .card { max-width:520px; }
+  h1 { font-size:1.4rem; margin:0 0 12px; }
+  p { color:#aeb6c2; line-height:1.6; }
+  a.btn { display:inline-block; margin-top:18px; background:#e50914; color:#fff;
+          text-decoration:none; padding:12px 22px; border-radius:8px; font-weight:600; }
+  code { color:#7fd1ff; word-break:break-all; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1 id="title">Autorisation reçue ✓</h1>
+  <p id="msg">Transmission à l'application locale…<br>Tu peux fermer cet onglet
+     une fois revenu à ton terminal.</p>
+  <a id="manual" class="btn" style="display:none">Continuer manuellement</a>
+</div>
+<script>
+  // TikTok (et autres) redirige ici avec ?code=...&state=... . On relaie ce code
+  // vers le petit serveur local de l'app (http://localhost:8723/). La navigation
+  // de haut niveau HTTPS -> http://localhost est autorisee par les navigateurs.
+  var qs = window.location.search || "";
+  var params = new URLSearchParams(qs);
+  var local = "http://localhost:8723/" + qs;
+  if (params.get("error")) {
+    document.getElementById("title").textContent = "Autorisation refusée";
+    document.getElementById("msg").textContent = params.get("error_description")
+        || params.get("error");
+  } else if (params.get("code")) {
+    var btn = document.getElementById("manual");
+    btn.href = local; btn.style.display = "inline-block";
+    // Tentative de relais automatique.
+    setTimeout(function(){ window.location.replace(local); }, 600);
+  } else {
+    document.getElementById("title").textContent = "En attente du code…";
+    document.getElementById("msg").textContent = "Aucun code reçu dans l'URL.";
+  }
+</script>
+</body>
+</html>
